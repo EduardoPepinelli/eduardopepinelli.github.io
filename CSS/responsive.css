@@ -44,6 +44,9 @@
     }
 }
 @media (max-width: 700px){
+    header{
+        position: initial!important;
+    }
     .prime-section svg{
         width: 12px!important;
         height: 12px!important;
@@ -112,7 +115,7 @@
         height: 11em;
     }
     section.projects {
-        padding: 10px 60px 30px 60px;
+        padding: 10px 0px 30px 0px;
     }
     
 
