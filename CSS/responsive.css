@@ -1,0 +1,124 @@
+@media (max-width: 1000px){
+    .contato form{
+        width:100%!important;
+    }
+    main{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .mainContent{
+        width: 100%;
+        align-items: center;
+        margin-bottom: 15%;
+        margin-top: 0px!important;
+        margin-bottom: 50px!important;
+    }
+    main .mainContent .text, .tecnologia{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    main .mainContent .text p {
+        width: 100%;
+        font-size: 0.7em;
+        padding: 0px;
+    }
+    main .tecnologias .cardContainer, .mainContent .text p {
+        margin-top: 32px;
+    }
+    main .photoContainer img {
+        width: 10em;
+        height: 10em;
+    }
+
+    main .mainContent h2:hover{
+        margin-bottom: 2%;
+        font-size: 1.5em;
+        color: var(--blue);
+        cursor: pointer;
+    }
+    main .photoContainer img:hover {
+        width: 11em;
+        height: 11em;
+    }
+}
+@media (max-width: 700px){
+    .prime-section svg{
+        width: 12px!important;
+        height: 12px!important;
+        margin-left: 2px;
+    }
+    .prime-section {
+        font-size: 1em;
+    }
+    span.prime-subtitle {
+        text-align: center;
+        width: 100%;
+    }
+    .prime-subtitle-link {
+        font-size: .9rem;
+        padding: 0px;
+    }
+    header nav{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    header nav > a{
+        display: none;
+    }
+    .menu{
+        padding-left: 0px;
+        font-size:14px;
+        gap: 20px;
+        
+    }
+     .menu a{
+         margin: 0px;
+     }
+    .cardContainer{
+        flex-wrap: wrap!important;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        text-align: center;
+        width: 100;
+    }
+    header h1 {
+        font-size: 1.5em;
+    }
+    header nav{
+        margin-top: 24px;
+    }
+    header nav a {
+        font-size: 1em;
+    }
+    main .flexContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    main .mainContent h2:hover{
+        margin-bottom: 2%;
+        font-size: 1.2em;
+        color: var(--blue);
+        cursor: pointer;
+    }
+    main .photoContainer img:hover {
+        width: 11em;
+        height: 11em;
+    }
+    section.projects {
+        padding: 10px 60px 30px 60px;
+    }
+    
+
+}
+
+
+
+
+

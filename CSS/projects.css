@@ -1,0 +1,59 @@
+.projects nav{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+
+.projects{
+    display: flex;
+    justify-content: center;
+    padding: 10px 60px 100px 60px;
+}
+.projects nav p, .projects nav a, .projects nav h3{
+    color: var(--white)!important;
+} 
+.projects nav span{
+    background-color: var(--blue);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--white);
+    color: var(--white);
+    font-family: "Roboto Mono";
+    transition: 0.3s ease-in-out;
+}
+.projects nav span:hover{
+    background-color: var(--white);
+    color: var(--blue);
+}
+.projects nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+
+}
+.Project_card a{
+    text-decoration: none;
+}
+.Project_card {
+    width: 450px;
+    border: 1px solid var(--white);
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin: 10px 10px;
+    transition: 0.3s ease-in-out;
+}
+.Project_card:hover{
+    border: 1px solid var(--blue);  
+    cursor: pointer;
+    padding: 60px
+}
+
+.Project_card a:hover{
+    color: var(--blue)!important;
+}
+.Project_card a:hover path{
+    stroke: var(--blue)!important;
+}

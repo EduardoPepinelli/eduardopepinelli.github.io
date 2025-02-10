@@ -1,0 +1,40 @@
+.contato form{
+    width: 600px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.contato form input, .contato form textarea{
+    background-color: var(--black);
+    padding: 15px;
+    box-shadow: none;
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    color: var(--white);
+}
+.contato form textarea{
+    height: 200px;
+    color: var(--white);
+}
+.contato form button{
+    padding: 20px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    background-color: var(--black);
+    border: 1px solid var(--white);
+    color: var(--white);    
+}
+.contato form button:hover{
+    background-color: var(--blue);
+
+}
+.contato{
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    padding: 30px;
+    margin-bottom:100px
+}

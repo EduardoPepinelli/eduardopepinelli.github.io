@@ -1,0 +1,179 @@
+main{
+   padding: 60px  5%;
+   display: Flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background: var(--black)
+}
+
+ /*MAIN CONTENT*/
+main .mainContent {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    max-width: 1000px;
+    margin-bottom: 200px;
+    margin-top: 100px;
+
+}
+
+main  h2{
+    margin-bottom: 2%;
+    font-size: 2.1em;
+    transition: 0.3s ease-in-out;
+    font-weight: 300;
+    color: var(--white);
+    font-family: "Roboto Mono", serif;
+}
+
+main  h2:hover{
+    color: var(--blue);
+    cursor: pointer;
+}
+main .mainContent img {
+    width: 20em;
+    height: 20em;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+main .mainContent img:hover {
+    height: 20.1em;
+    width: 20.1em;
+    box-shadow: 0px 0px 8px var(--blue);
+    cursor: pointer;
+}
+.nameImg{
+    padding-top: 0.5em;
+}
+
+main .mainContent .text p{
+    width: 85%;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.6;
+    padding: 0px 0px 0px 20px;
+}
+main .flexContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 0 50%;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    padding-top:40px
+}
+/*CARD CONTENT*/
+main .cardContainer .card {
+    display: inline;
+    align-items: center;  
+    border: none;
+
+}
+main .cardContainer .card img {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 0.8em;
+    margin-left: 0.8em;
+    transition: 0.3s ease-in-out ;
+
+}
+
+main .cardContainer .card img:hover{
+    height: 130px;
+    width: 130px;
+    box-shadow: 0px 0px 8px var(--blue);
+}
+.cardContainer{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.tecnologia .cardContainer{
+    background: var(--white);
+    border-radius: 20px;
+}
+.tecnologia {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.mainContent .tecnologia h2{
+    color: var(--white); 
+    margin-bottom:50px
+}
+/*Footer*/
+
+footer{
+    background-color: var(--background-black);
+    text-align: center;
+    padding: 20px 0px;
+}
+footer span{
+    color: var(--white);
+}
+
+/*SVG*/
+svg path {
+    stroke: var(--white);
+    transition: stroke 0.3s ease-in-out;
+}
+
+.prime-subtitle-link:hover path {
+    stroke: var(--blue); /* Muda a cor da linha para azul */
+}
+
+.prime-section{
+    font-family: "Roboto Mono", serif;
+    font-size: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: var(--background-black);
+    color: var(--white);
+   
+
+    
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.prime-title{
+    transition: 0.3s ease-in-out;
+    
+}
+.prime-title:hover{
+    color: var(--blue);
+    cursor: pointer;
+    
+}
+.prime-subtitle {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.prime-subtitle-link{
+    list-style: none;
+    font-size: 2rem; 
+    transition: 0.3s ease-in-out; 
+    padding-left: 60px;
+    padding-top: 10px;
+    color: var(--white);
+    text-decoration: none;
+}
+.prime-subtitle-link:hover{
+    color: var(--blue);
+    cursor: pointer;
+    transition: stroke 0.3s ease-in-out;
+}
