@@ -8,6 +8,9 @@ main{
 }
 
  /*MAIN CONTENT*/
+ main .mainContent h2:hover {
+    color: var(--blue);
+}
 main .mainContent {
     display: flex;
     flex-direction: column;
@@ -107,7 +110,7 @@ main .cardContainer .card img:hover{
     margin-top: 50px;
 }
 .mainContent .tecnologia h2{
-    color: var(--white); 
+
     margin-bottom:50px
 }
 /*Footer*/
