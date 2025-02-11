@@ -113,6 +113,9 @@ main .cardContainer .card img:hover{
 
     margin-bottom:50px
 }
+.mainContent .tecnologia h2:hover{
+    color: var(--blue);
+}
 /*Footer*/
 
 footer{
