@@ -22,9 +22,9 @@ window.addEventListener("load", digitar);
 
 /* botões */
 
-    const aboutSection = document.querySelector(".about");
+    const aboutSection = document.querySelector(".mainContent");
     const contactSection = document.querySelector(".contato");
-    const projectsSection = document.querySelector(".projects");
+    const projectsSection = document.querySelector(".project-title");
 
     if (!aboutSection) return; 
 
