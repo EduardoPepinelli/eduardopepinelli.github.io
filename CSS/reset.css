@@ -22,7 +22,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
 
-    overflow-x: scroll;
+    overflow: auto;
 }
 body a{
     text-decoration: none;
