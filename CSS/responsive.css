@@ -127,6 +127,12 @@
         width:100%;
         padding: 0px;
     }
+    .carousel-container{
+        padding: 0px;
+    }
+    .carousel-btn{
+        padding: 0;
+    }
     .carousel-btn.prev {
         left: 0;
     }

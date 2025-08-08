@@ -72,6 +72,7 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
+    padding: 0 50px;
 }
 .carousel-mask {
     overflow: hidden;
