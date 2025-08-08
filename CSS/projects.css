@@ -76,7 +76,7 @@
 .carousel-mask {
     overflow: hidden;
     width: 100%;
-    max-width: 80%;
+    max-width: 1230px;
 }
 
 .carousel-track {
