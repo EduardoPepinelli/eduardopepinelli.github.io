@@ -65,3 +65,42 @@ window.addEventListener("load", digitar);
         menuButtonProject.addEventListener("click", scrollToProjects);
     }
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const track = document.querySelector('.carousel-track');
+    const prevBtn = document.querySelector('.carousel-btn.prev');
+    const nextBtn = document.querySelector('.carousel-btn.next');
+
+    let currentIndex = 0;
+    const cards = document.querySelectorAll('.carousel-card');
+    const cardWidth = cards[0].offsetWidth + 10; 
+
+    function updateCarousel() {
+        const offset = -(currentIndex * cardWidth);
+        track.style.transform = `translateX(${offset}px)`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+        if(window.innerWidth > 768) {
+            if (currentIndex < cards.length - 4) {
+                currentIndex++;
+                updateCarousel();
+            }
+        } else{
+            if (currentIndex < cards.length - 1) {
+                currentIndex++;
+                updateCarousel();
+            }
+        }
+    });
+
+    prevBtn.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+        }
+    });
+
+    window.addEventListener('resize', () => {
+        updateCarousel();
+    });
+});

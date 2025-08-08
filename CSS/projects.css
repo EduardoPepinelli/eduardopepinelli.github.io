@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     padding: 10px 60px 100px 60px;
+    max-width: 1110px
 }
 .projects nav p, .projects nav a, .projects nav h3{
     color: var(--white)!important;
@@ -56,4 +57,72 @@
 }
 .Project_card a:hover path{
     stroke: var(--blue)!important;
+}
+
+/*Meus cases*/
+.projects-work {
+    margin-top: 40px;
+    padding: 0 20px;
+    max-width: 100%;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.carousel-mask {
+    overflow: hidden;
+    width: 100%;
+    max-width: 80%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 10px;
+}
+
+.carousel-card {
+    min-width: 300px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.carousel-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: transparent;
+    color: var(--blue);
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    padding: 25px;
+    transition: background 0.3s;
+}
+
+.carousel-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+.carousel-btn.prev {
+    left: 0;
+}
+
+.carousel-btn.next {
+    right: 0;
 }

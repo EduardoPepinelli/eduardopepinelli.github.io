@@ -120,7 +120,23 @@
     section.projects {
         padding: 10px 0px 30px 0px;
     }
-    
+     .carousel-mask{
+        max-width: 300px;
+    }
+    .projects-work{
+        width:100%;
+        padding: 0px;
+    }
+    .carousel-btn.prev {
+        left: 0;
+    }
+
+    .carousel-btn.next {
+        right: 0;
+    }
+    main h2{
+        max-width: 300px;
+    }
 
 }
 

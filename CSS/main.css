@@ -28,6 +28,7 @@ main  h2{
     font-weight: 300;
     color: var(--white);
     font-family: "Roboto Mono", serif;
+
 }
 
 main  h2:hover{
