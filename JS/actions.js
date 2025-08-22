@@ -24,12 +24,18 @@ window.addEventListener("load", digitar);
 
     const aboutSection = document.querySelector(".mainContent");
     const contactSection = document.querySelector(".contato");
-    const projectsSection = document.querySelector(".project-title");
+    const casesSection = document.querySelector(".cases-title");
 
     if (!aboutSection) return; 
 
     function scrollToAbout() {
         aboutSection.scrollIntoView({
+            behavior: "smooth",
+            block: "start" 
+        });
+    }
+    function scrollToCases() {
+        casesSection.scrollIntoView({
             behavior: "smooth",
             block: "start" 
         });
@@ -40,12 +46,7 @@ window.addEventListener("load", digitar);
             block: "start" 
         });
     }
-    function scrollToProjects() {
-        projectsSection.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-        });
-    }
+
 
     // Ativar a rolagem ao clicar em um botão do menu
     const scrollButton = document.querySelector(".prime-subtitle-link");
@@ -56,51 +57,58 @@ window.addEventListener("load", digitar);
     if (menuButtonAbout) {
         menuButtonAbout.addEventListener("click", scrollToAbout);
     }
+    const menuButtonCases = document.querySelector(".cases-menu");
+    if (menuButtonCases) {
+        menuButtonCases.addEventListener("click", scrollToCases);
+    }
     const menuButtonContact = document.querySelector(".contato-menu");
     if (menuButtonContact) {
         menuButtonContact.addEventListener("click", scrollToContact);
-    }
-    const menuButtonProject = document.querySelector(".projects-menu");
-    if (menuButtonProject) {
-        menuButtonProject.addEventListener("click", scrollToProjects);
     }
 });
 document.addEventListener("DOMContentLoaded", () => {
     const track = document.querySelector('.carousel-track');
     const prevBtn = document.querySelector('.carousel-btn.prev');
     const nextBtn = document.querySelector('.carousel-btn.next');
+    const cards = document.querySelectorAll('.carousel-card');
 
     let currentIndex = 0;
-    const cards = document.querySelectorAll('.carousel-card');
-    const cardWidth = cards[0].offsetWidth + 10; 
+    const cardWidth = cards[0].offsetWidth + 10; // largura + gap
 
     function updateCarousel() {
         const offset = -(currentIndex * cardWidth);
         track.style.transform = `translateX(${offset}px)`;
     }
 
+    function checkScreenSize() {
+        if (window.innerWidth <= 768) {
+            prevBtn.style.display = "block";
+            nextBtn.style.display = "block";
+        } else {
+            // reset no desktop
+            track.style.transform = "translateX(0)";
+            currentIndex = 0;
+            prevBtn.style.display = "none";
+            nextBtn.style.display = "none";
+        }
+    }
+
     nextBtn.addEventListener('click', () => {
-        if(window.innerWidth > 768) {
-            if (currentIndex < cards.length - 4) {
-                currentIndex++;
-                updateCarousel();
-            }
-        } else{
-            if (currentIndex < cards.length - 1) {
-                currentIndex++;
-                updateCarousel();
-            }
+        if (window.innerWidth <= 768 && currentIndex < cards.length - 1) {
+            currentIndex++;
+            updateCarousel();
         }
     });
 
     prevBtn.addEventListener('click', () => {
-        if (currentIndex > 0) {
+        if (window.innerWidth <= 768 && currentIndex > 0) {
             currentIndex--;
             updateCarousel();
         }
     });
 
-    window.addEventListener('resize', () => {
-        updateCarousel();
-    });
+    window.addEventListener('resize', checkScreenSize);
+
+    // checa logo no início
+    checkScreenSize();
 });

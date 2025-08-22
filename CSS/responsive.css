@@ -77,7 +77,7 @@
         gap: 20px;
         
     }
-     .menu a{
+    .menu a{
          margin: 0px;
      }
     .cardContainer{
@@ -140,9 +140,10 @@
     .carousel-btn.next {
         right: 0;
     }
-    main h2{
-        max-width: 300px;
+    .cases-title{
+        max-width: 305px;
     }
+ 
 
 }
 
